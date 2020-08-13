@@ -17,3 +17,5 @@ git@github.com:karuppuchamyk/SimpleCalculator.git
 	http://localhost:8081/simplecalculator/ready - > it should give "UP".
 	
 -> For testing Junit run -> mvn test
+
+![junit code coverage](https://user-images.githubusercontent.com/36220438/90118955-9726c000-dd76-11ea-8bc0-0c22699d7140.png)
