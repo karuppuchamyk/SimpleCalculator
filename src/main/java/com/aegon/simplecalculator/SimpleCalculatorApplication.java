@@ -18,7 +18,7 @@ public class SimpleCalculatorApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/simplecalculator/performOperation").allowedOrigins("http://localhost:4200");
+				registry.addMapping("/simplecalculator/performOperation").allowedOrigins("*");
 			}
 		};
 
