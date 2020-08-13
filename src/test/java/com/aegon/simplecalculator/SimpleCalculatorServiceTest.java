@@ -28,8 +28,8 @@ public class SimpleCalculatorServiceTest {
 
 	@Test
 	public void testAddOperation() {
-		calculator.setFirstOperand(2);
-		calculator.setSecondOperand(3);
+		calculator.setFirstOperand(2.0);
+		calculator.setSecondOperand(3.0);
 		calculator.setOperator('+');
 
 		Double result = simpleCalculatorService.performOperation(calculator);
@@ -38,8 +38,8 @@ public class SimpleCalculatorServiceTest {
 
 	@Test
 	public void testSubtractOperation() {
-		calculator.setFirstOperand(4);
-		calculator.setSecondOperand(3);
+		calculator.setFirstOperand(4.0);
+		calculator.setSecondOperand(3.0);
 		calculator.setOperator('-');
 
 		Double result = simpleCalculatorService.performOperation(calculator);
@@ -48,8 +48,8 @@ public class SimpleCalculatorServiceTest {
 
 	@Test
 	public void testAddMultiplyOperation() {
-		calculator.setFirstOperand(2);
-		calculator.setSecondOperand(3);
+		calculator.setFirstOperand(2.0);
+		calculator.setSecondOperand(3.0);
 		calculator.setOperator('*');
 
 		Double result = simpleCalculatorService.performOperation(calculator);
@@ -58,8 +58,8 @@ public class SimpleCalculatorServiceTest {
 
 	@Test
 	public void testDivideOperation() {
-		calculator.setFirstOperand(10);
-		calculator.setSecondOperand(2);
+		calculator.setFirstOperand(10.0);
+		calculator.setSecondOperand(2.0);
 		calculator.setOperator('/');
 
 		Double result = simpleCalculatorService.performOperation(calculator);
@@ -69,8 +69,8 @@ public class SimpleCalculatorServiceTest {
 
 	@Test(expected = ArithmeticException.class)
 	public void testDivideByZeroOperation() {
-		calculator.setFirstOperand(10);
-		calculator.setSecondOperand(0);
+		calculator.setFirstOperand(10.0);
+		calculator.setSecondOperand(0.0);
 		calculator.setOperator('/');
 
 		Double result = simpleCalculatorService.performOperation(calculator);
@@ -81,8 +81,8 @@ public class SimpleCalculatorServiceTest {
 
 	@Test(expected = UnsupportedOperationException.class)
 	public void testUnSupportedOperation() {
-		calculator.setFirstOperand(10);
-		calculator.setSecondOperand(2);
+		calculator.setFirstOperand(10.0);
+		calculator.setSecondOperand(2.0);
 		calculator.setOperator('(');
 
 		Double result = simpleCalculatorService.performOperation(calculator);

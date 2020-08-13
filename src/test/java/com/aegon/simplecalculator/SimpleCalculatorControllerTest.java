@@ -36,8 +36,8 @@ public class SimpleCalculatorControllerTest  {
 
 	@Test
 	public void testControllerOperation() {
-		calculator.setFirstOperand(2);
-		calculator.setSecondOperand(1);
+		calculator.setFirstOperand(2.0);
+		calculator.setSecondOperand(1.0);
 		calculator.setOperator('+');
 
 		CalculatorResponse response = simpleCalculatorController.performOperation(calculator).getBody();

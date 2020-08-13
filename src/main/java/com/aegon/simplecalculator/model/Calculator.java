@@ -6,22 +6,24 @@ public class Calculator implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
-	private Integer firstOperand;
-	private Integer secondOperand;
+	private Double firstOperand;
+	private Double secondOperand;
 	private Character operator;
 	
-	public Integer getFirstOperand() {
+
+	public Double getFirstOperand() {
 		return firstOperand;
 	}
-	public void setFirstOperand(Integer firstOperand) {
+	public void setFirstOperand(Double firstOperand) {
 		this.firstOperand = firstOperand;
 	}
-	public Integer getSecondOperand() {
+	public Double getSecondOperand() {
 		return secondOperand;
 	}
-	public void setSecondOperand(Integer secondOperand) {
+	public void setSecondOperand(Double secondOperand) {
 		this.secondOperand = secondOperand;
 	}
+	
 	public Character getOperator() {
 		return operator;
 	}

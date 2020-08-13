@@ -15,30 +15,30 @@ public class SimpleCalculatorServiceImpl implements SimpleCalculatorService {
 	/**
 	 * Method to Add an given operand values
 	 */
-	private double add(int operand1, int operand2) {
-		return (double) operand1 + operand2;
+	private double add(double operand1, double operand2) {
+		return operand1 + operand2;
 	}
 
 	/**
 	 * Method to Subtract an given operand values
 	 */
-	private double substract(int operand1, int operand2) {
-		return (double) operand1 - operand2;
+	private double substract(double operand1, double operand2) {
+		return operand1 - operand2;
 	}
 
 	/**
 	 * Method to Multiply an given operand values
 	 */
-	private double multiply(int operand1, int operand2) {
-		return (double) operand1 * operand2;
+	private double multiply(double operand1, double operand2) {
+		return operand1 * operand2;
 	}
 
 	/**
 	 * Method to Divide an given operand values
 	 */
-	private double divide(int operand1, int operand2) {
+	private double divide(double operand1, double operand2) {
 
-		return operand1 / operand2;
+		return (int) operand1 / (int) operand2;
 	}  
 
 
@@ -52,8 +52,8 @@ public class SimpleCalculatorServiceImpl implements SimpleCalculatorService {
 		Double result = null; 
 		if (calculator != null) {
 
-			int operand1 = calculator.getFirstOperand();
-			int operand2 = calculator.getSecondOperand();
+			double operand1 = calculator.getFirstOperand();
+			double operand2 = calculator.getSecondOperand();
 			char operator = calculator.getOperator();
 
 			if (operator == '+') {
