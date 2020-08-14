@@ -18,4 +18,8 @@ git@github.com:karuppuchamyk/SimpleCalculator.git
 	
 -> For testing Junit run -> mvn test
 
+![test-result](https://user-images.githubusercontent.com/36220438/90220478-e7a92680-de25-11ea-9276-106e5762b685.PNG)
+
+-> Coverage
+
 ![junit code coverage](https://user-images.githubusercontent.com/36220438/90118955-9726c000-dd76-11ea-8bc0-0c22699d7140.png)
