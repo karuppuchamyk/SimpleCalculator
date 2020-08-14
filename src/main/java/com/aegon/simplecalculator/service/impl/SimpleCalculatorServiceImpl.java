@@ -38,7 +38,7 @@ public class SimpleCalculatorServiceImpl implements SimpleCalculatorService {
 	 */
 	private double divide(double operand1, double operand2) {
 
-		return (int) operand1 / (int) operand2;
+		return operand1 / operand2;
 	}  
 
 
@@ -68,6 +68,10 @@ public class SimpleCalculatorServiceImpl implements SimpleCalculatorService {
 			else if (operator == '/') {
 				try {
 					result = divide(operand1, operand2);
+					// We cannot divide by zero
+					if (result == Double.POSITIVE_INFINITY || result == Double.NEGATIVE_INFINITY) {
+						throw new ArithmeticException();
+					}						
 				}catch(ArithmeticException ex) {
 					throw new ArithmeticException();
 				}
